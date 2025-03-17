@@ -18,7 +18,7 @@ variable "location" {
   description = "The location of the resources."
 }
 
-variable "resource_group_name" {
+variable "rg_name" {
   type        = string
   description = "The name of the resource group."
 }

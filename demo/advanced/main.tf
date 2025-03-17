@@ -19,9 +19,9 @@ module "demo_vnet" {
     "${local.subnet_name}-1" = "10.0.1.0/24"
     "${local.subnet_name}-2" = "10.0.2.0/24"
   }
-  location            = module.demo_rg.location
-  resource_group_name = module.demo_rg.name
-  tags                = var.tags
+  location = module.demo_rg.location
+  rg_name  = module.demo_rg.name
+  tags     = var.tags
 }
 
 resource "azurerm_storage_container" "shared" {
